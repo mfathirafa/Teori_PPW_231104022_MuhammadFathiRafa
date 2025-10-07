@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regristasi</title>
+    <style>
+        #header {
+            float: left;
+            width: 100%;
+            background: #16128a;
+            height: 100px;
+            text-align: center;
+            color: #ffffff;
+        }
+        #menu {
+            float: left;
+            width: 100%;
+            background: #5854bf;
+            height: 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+        #l-side {
+            float: left;
+            width: 20%;
+            background: #d1d1e0;
+            min-height: 400px;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        #content {
+            float: left;
+            width: 60%;
+            background: #ffffff;
+            min-height: 400px;
+            text-align: center;
+            color: #000000;
+        }
+        #r-side {
+            float: left;
+            width: 20%;
+            background: #d1d1e0;
+            min-height: 400px;
+            text-align: center;
+            color: #ffffff;
+        } 
+        #footer {
+            float: left;
+            width: 100%;
+            background: #999999;
+            min-height: 400px;
+            text-align: center;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">header</div>
+    <div id="menu">
+        <a href= "index.html">Beranda</a>
+        <a href= "produk.html">Produk</a>
+        <a href= "member.html">Member</a>
+        <a href= "registrasi.html">Registrasi</a>
+    </div>
+    <div id="l-side">populer</div>
+    <div id="content">
+        <h3>Form Registrasi</h3>
+        <form>
+            <table>
+                </tr>
+                    <td>Nama Lengkap</td><td>:</td>
+                    <td style="text-align:left;"><input type="text" name="nama"></td>
+                </tr>
+                <tr>
+                    <td>TTL</td><td>:</td>
+                    <td style="text-align:left;">
+                        <input type="text" name="tempat">
+                        <input type="date" name="tanggal">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Alamat</td><td>:</td>
+                    <td style="text-align:left;"><textarea name="alamat" id="alamat"></textarea></td>
+                </tr>
+                <tr>
+                    <td>JK</td><td>:</td>
+                    <td style="text-align:left;"><input type="radio" name="jk" id="laki-laki">Laki-Laki
+                        <input type="radio" name="jk" id="perempuan">Perempuan</td>
+                </tr>
+                <tr>
+                    <td>Agama</td><td>:</td>
+                    <td style="text-align:left;">
+                        <select id="agama" name="agama">
+                            <option value="islam">Islam</option>
+                            <option value="kristen">Kristen Protestan</option>
+                            <option value="katolik">Katolik</option>
+                            <option value="hindu">Hindu</option>
+                            <option value="buddha">Buddha</option>
+                            <option value="konghucu">Konghucu</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hobi</td><td>:</td>
+                    <td style="text-align:left;">
+                        <input type="checkbox" name="mancing">Mancing
+                        <input type="checkbox" name="masak">Masak
+                        <input type="checkbox" name="membaca">Membaca
+                        <input type="checkbox" name="ngoding">Ngoding
+                        <input type="checkbox" name="olahraga">Olahraga
+                    </td>
+                </tr>
+                <tr>
+                    <td></td><td></td>
+                    <td style="text-align:left;">
+                        <input type="submit" value="Simpan">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div id="r-side">advertise</div>
+    <div id="footer">footer</div>
+</body>
+</html>
