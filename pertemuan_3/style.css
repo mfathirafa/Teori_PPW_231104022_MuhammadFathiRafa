@@ -1,0 +1,229 @@
+/* Reset Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Ganti dengan font yang Anda gunakan */
+}
+
+/* Utilitas Container */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header dan Navigasi */
+header {
+    background-color: #5d3f8f; /* Warna ungu pada header */
+    color: white;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 1em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero / Banner Section */
+.hero {
+    padding: 0; 
+    width: 100%;
+}
+
+.banner-img {
+    /* Atur agar gambar mengisi lebar penuh dari elemen parent-nya (.hero) */
+    width: 100%;
+    /* Hapus max-width agar gambar melebar maksimal */
+    max-width: none; 
+    padding-top: 20px;
+    height: 200px; 
+    display: block;
+    /* Margin auto sudah tidak diperlukan karena sudah full width */
+    margin: 0; 
+}
+
+/* Content Utama */
+.content {
+    display: flex;
+    gap: 20px;
+    padding: 30px 15px;
+}
+
+/* Grid Produk */
+.product-grid {
+    flex: 3; /* Ambil 3/4 lebar */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 kolom */
+    gap: 15px;
+}
+
+.product-item {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.product-item .price {
+    font-weight: 700;
+    color: #5d3f8f; /* Warna ungu */
+    margin-top: 5px;
+}
+
+/* Placeholder untuk contoh produk yang belum ada gambarnya */
+.product-item.placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px; 
+    background-color: #f9f9f9;
+    color: #aaa;
+}
+
+
+/* Rekomendasi (Aside) */
+.recommendation {
+    flex: 1; /* Ambil 1/4 lebar */
+    padding: 15px;
+    /* background-color: #f4f4f4; */
+}
+
+.recommendation h3 {
+    border-bottom: 2px solid #5d3f8f;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.recommended-item {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: white;
+}
+
+.recommended-item .code {
+    font-size: 0.8em;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+.recommended-item img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.recommended-item h4 {
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+.recommended-item .price-large {
+    font-weight: 700;
+    color: #ff4500; /* Contoh warna harga yang menonjol */
+    font-size: 1.2em;
+}
+
+/* Footer */
+footer {
+    background-color: #f4f4f4; /* Latar belakang footer */
+    border-top: 1px solid #ddd;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.footer-col {
+    width: 30%;
+}
+
+.footer-col h4 {
+    color: #5d3f8f;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 0.9em;
+    line-height: 1.8;
+}
+
+.footer-col ul li a:hover {
+    color: #5d3f8f;
+}
+
+.copyright {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.8em;
+    color: #888;
+}
+
+/* Responsiveness dasar (untuk layar kecil) */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+    nav ul {
+        padding-top: 10px;
+    }
+    .content {
+        flex-direction: column;
+    }
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 kolom di layar kecil */
+    }
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer-col {
+        width: 100%;
+    }
+}
