@@ -112,6 +112,11 @@ nav ul li a:hover {
     color: #aaa;
 }
 
+.detailGambar {
+    display: none;
+    display: flex;
+}
+
 
 /* Rekomendasi (Aside) */
 .recommendation {
